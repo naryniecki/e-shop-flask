@@ -48,8 +48,9 @@ jobs:
       - run:
           name: run tests
           command: |
-            ls
             . venv/bin/activate
+            ls
+            pwd
             python3 e-shop-flask/test/test_orders_controller.py
 
       - store_artifacts:
